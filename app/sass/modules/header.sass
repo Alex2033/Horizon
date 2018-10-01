@@ -1,0 +1,66 @@
+.header__top
+    background-color: $light
+    padding: 6px 0
+
+.header__logo
+    +col(2)
+    
+.logo
+    display: block
+
+.menu
+    +col(9)
+
+.menu__list
+    display: flex
+    flex-wrap: wrap
+
+.menu__item
+    &:not(:last-child)
+        margin-right: 15px
+
+.menu__link
+    font-size: 12px
+    color: $dark-gray
+
+    &:hover
+        text-decoration: underline
+
+.header__socials
+    +col(3)
+
+    .socials__list
+        justify-content: flex-end
+
+.header__bottom
+    padding: 15px 0
+
+.header__contacts
+    +col(6)
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-around
+
+    a.header__link
+        &:hover
+            text-decoration: underline
+
+.header__link
+    display: block
+    color: $main-color
+    font-weight: 600
+    line-height: 1.6
+
+
+.header__location,
+.header__phones
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.header__contacts-icon
+    margin-right: 10px
+    
+.header__actions
+    +col(4)

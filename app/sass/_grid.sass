@@ -39,18 +39,3 @@ $gutter: 10px
   margin-right: $gutter/2
   margin-left: $gutter/2
   width: calc( (100% / #{$cols}) * #{$num} - #{$gutter} )
-
-.wrapper
-  margin: 20px
-  
-  &__container
-    +container()
-    
-  &__row
-    +row(flex-start)
-  
-  &__item 
-    background-color: #222
-    height: 170px
-    margin-bottom: $gutter
-    +col(4)
