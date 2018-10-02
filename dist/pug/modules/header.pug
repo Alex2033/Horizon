@@ -33,7 +33,7 @@ header.header
 
     .header__bottom
         .container
-            .row
+            .row.header__bottom-row
                 .header__logo
                     // begin logo 
                     a(href="#").logo
@@ -54,10 +54,10 @@ header.header
                             a.header__link(href="tel:+78127401397") +7 (812) 740-13-97
                 .header__actions
                     .header__buttons
-                        a.button(href="#") Напишите мне
-                        a.button(href="#") Позвоните мне
+                        a.button.button--orange(href="#") Напишите мне
+                        a.button.button--blue(href="#") Позвоните мне
                     // begin basket 
-                    .basket
+                    a(href="#").basket
                         .basket__left
                             img.basket__icon(src="img/header/basket.png", alt="Basket")
                         .basket__right

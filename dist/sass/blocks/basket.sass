@@ -1,0 +1,24 @@
+.basket
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+
+    &:hover
+        .basket__goods
+            text-decoration: none
+
+.basket__left
+    margin-right: 9px
+
+.basket__price
+    font-weight: 600
+    margin-bottom: 5px
+    color: $main-color
+
+.basket__goods
+    display: inline-block
+    color: $gray
+    text-decoration: underline

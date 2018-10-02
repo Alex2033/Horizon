@@ -4,6 +4,9 @@
 
 .header__logo
     +col(2)
+
+    @media #{$_md}
+        +col(3)
     
 .logo
     display: block
@@ -46,6 +49,9 @@
         &:hover
             text-decoration: underline
 
+    @media #{$_md}
+        +col(5)
+
 .header__link
     display: block
     color: $main-color
@@ -61,6 +67,26 @@
 
 .header__contacts-icon
     margin-right: 10px
+
+    @media #{$_md}
+        display: none
     
 .header__actions
     +col(4)
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.header__bottom-row
+    align-items: center
+
+.header__buttons
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+
+    .button
+        &:first-child
+            margin-bottom: 10px
