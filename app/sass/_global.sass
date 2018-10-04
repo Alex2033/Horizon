@@ -10,7 +10,7 @@ html, body
 body
 	min-width: 320px
 	font-size: 14px
-	font-family: $main-font
+	font-family: $main-regular
 	line-height: 1.423
 	-webkit-font-smoothing: antialiased
 	background-color: white
@@ -39,7 +39,6 @@ p
 	width: 100%
 
 .container 
-	position: relative
 	z-index: 1
 	+container()
 
@@ -81,8 +80,11 @@ h1, h2, h3, h4, h5, h6
 
 .h2
 	font-size: 24px
-	font-weight: 700
+	font-family: $alt-bold
 	color: #000000
 
 .row
 	+row()
+
+.main-content
+	background-color: green

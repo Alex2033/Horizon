@@ -6,7 +6,7 @@
     +col(2)
 
     @media #{$_md}
-        +col(3)
+        +col(2.5)
     
 .logo
     display: block
@@ -50,12 +50,12 @@
             text-decoration: underline
 
     @media #{$_md}
-        +col(5)
+        +col(5.5)
 
 .header__link
     display: block
     color: $main-color
-    font-weight: 600
+    font-family: $main-semibold
     line-height: 1.6
 
 
@@ -67,6 +67,9 @@
 
 .header__contacts-icon
     margin-right: 10px
+
+    img
+        width: 34px
 
     @media #{$_md}
         display: none
@@ -90,3 +93,31 @@
     .button
         &:first-child
             margin-bottom: 10px
+
+.header__basket
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+
+    &:hover
+        .header__basket-goods
+            text-decoration: none
+
+.header__basket-left
+    margin-right: 9px
+
+.header__basket-price
+    font-family: $main-semibold
+    margin-bottom: 5px
+    color: $main-color
+
+.header__basket-goods
+    display: inline-block
+    color: $gray
+    text-decoration: underline
+
+.header__basket-icon
+    width: 36px

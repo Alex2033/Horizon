@@ -1,0 +1,55 @@
+.navigation
+    background-color: $accent
+    
+.navigation__container
+    display: flex
+    position: relative
+    
+.navigation__list
+    flex-grow: 1
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+.navigation__item
+    flex-grow: 1
+
+    &:hover
+        .navigation__link
+            border-color: $alt-accent
+
+        .dropdown
+            visibility: visible
+            opacity: 1
+
+.navigation__link
+    text-align: center
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    padding-top: 14px
+    padding-bottom: 11px
+    color: #ffffff
+    font-size: 16px
+    border-bottom: 3px solid transparent
+
+    .svg-inline--fa
+        margin-left: 6px
+
+.nav-button
+    background-color: $alt-accent
+    font-family: $main-bold
+    border: 0
+    border-bottom: 3px solid transparent
+    cursor: pointer
+
+    &:focus
+        outline: 0
+
+.navigation-search__form-input
+    display: none
+
+.burger
+    width: 14px
+    margin-right: 12px

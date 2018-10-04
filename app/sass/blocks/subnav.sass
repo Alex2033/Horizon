@@ -1,0 +1,44 @@
+.subnav
+    position: absolute
+    width: calc(100% - 30px)
+    top: 100%
+    left: 50%
+    background-color: #ffffff
+    box-shadow: 0 0 50px rgba(#000, .3)
+    transform: translate(-50%)
+    padding: 35px 60px 70px 35px
+    opacity: 0
+    visibility: hidden
+    transition: opacity .3s ease, visibility .3s ease
+
+    &.active
+        opacity: 1
+        visibility: visible
+
+.subnav-list__item
+    margin-bottom: 30px
+
+.subnav-list__heading
+    font-size: 16px
+    font-family: $main-semibold
+    margin-bottom: 13px
+
+.subnav-list__icon
+    margin-right: 20px
+    width: 60px
+
+.subnav-list__body
+    display: flex
+    align-items: flex-start
+
+.subnav-list__link
+    font-size: 15px
+    line-height: 2
+    color: $accent
+    font-family: $main-medium
+
+    &:hover
+        text-decoration: underline
+
+.subnav-list
+    column-count: 3

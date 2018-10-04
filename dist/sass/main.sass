@@ -1,6 +1,3 @@
-// fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700')
-    
 // utils
 @import "utils/vars"
 @import "utils/fonts"
@@ -9,16 +6,19 @@
 @import "utils/normalize.scss"
 
 // layout
-@import "grid"
-@import "global"
+@import "grid"    // кастомная сетка
+@import "global"  // глобальные стили
 
 // modules
-@import "modules/header"
-@import "modules/footer"
+@import "modules/header"      // шапка сайта
+@import "modules/navigation"  // навигация
+@import "modules/footer"      // подвал страницы
 
 // blocks
-@import "blocks/socials" // социалки
-@import "blocks/basket" // корзина
+@import "blocks/socials"    // социалки
+@import "blocks/dropdown"   // выпадающее меню
+@import "blocks/tabs"       // табы
+@import "blocks/subnav"     // выпадающая навигация
 
 // pages
 @import "pages/index" // главна страница
