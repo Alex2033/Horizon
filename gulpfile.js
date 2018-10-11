@@ -104,7 +104,7 @@ gulp.task('rsync', function() {
 gulp.task('watch', ['pug', 'styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/pug/*/*.pug', ['pug']);
+	gulp.watch('app/pug/**/*.pug', ['pug']);
 	gulp.watch('app/*.html', browsersync.reload);
 });
 
