@@ -7,6 +7,7 @@
 
 .hero__item
     position: relative
+    user-select: text
 
 .hero__item-wrapper
     padding-top: 125px
@@ -15,8 +16,49 @@
 .hero__text
     max-width: 490px
 
+    ul
+        margin-bottom: 30px
+
+    li
+        margin-bottom: 8px
+        font-size: 18px
+        color: #000000
+
 .hero__img
     position: absolute
     top: 0
     right: 0
     width: 50%
+    
+    img
+        margin-left: auto
+        margin-right: auto
+
+.hero__nav
+    +container
+
+.hero__nav-wrapper
+    display: flex
+    justify-content: space-between
+
+.hero__nav-wrapper
+    .slick-arrow
+        color: $gray
+        font-size: 36px
+        cursor: pointer
+        transition: filter .2s ease
+
+        &:hover
+            filter: brightness(10%)
+
+    img
+        width: 20px
+
+.hero__buttons
+    .button
+        padding-left: 43px
+        padding-right: 43px
+        
+        &:hover
+            background-color: $accent
+            color: #ffffff
