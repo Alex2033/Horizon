@@ -52,36 +52,26 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 0
 	font-weight: normal
 
-.button
-	display: inline-block
-	border: 1px solid $accent
-	background-color: transparent
-	border-radius: 20px
-	font-size: 12px
-	font-weight: 600
-	color: $accent
-	padding: 5.5px 31px
-	transition: background-color .2s ease
-
-.button--orange
-	background-color: $alt-accent
-	color: #ffffff
-	border-color: $alt-accent
-
-	&:hover
-		background-color: darken($alt-accent, 5%)
-
-.button--blue
-	background-color: $accent
-	color: #ffffff
-
-	&:hover
-		background-color: darken($accent, 5%)
 
 .heading
-	font-size: 24px
-	font-family: $alt-bold
-	color: #000000
+	margin-bottom: 50px
+	h2
+		text-align: center
+		font-size: 24px
+		font-family: $alt-bold
+		color: #000000
+		position: relative
+		padding-bottom: 12px
+
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			bottom: 0
+			transform: translateX(-50%)
+			width: 65px
+			height: 3px
+			background-color: $alt-accent
 
 .row
 	+row()

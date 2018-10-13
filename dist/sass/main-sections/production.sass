@@ -9,7 +9,7 @@
     display: flex
     flex-wrap: wrap
     margin-right: -30px
-    margin-bottom: -30px
+    margin-bottom: 20px
 
 .product
     width: calc(25% - 30px)
@@ -68,6 +68,8 @@
     margin-top: auto
     margin-left: auto
     width: 115px
+    display: flex
+    justify-content: center
     position: relative
 
     img
@@ -85,3 +87,15 @@
         z-index: 0
         transform: translate(-50%, -50%)
         transition: background-color .15s ease
+
+img.hidden-img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    opacity: 0
+    visibility: hidden
+
+.production__button
+    text-align: center
