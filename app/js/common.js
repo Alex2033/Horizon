@@ -53,3 +53,23 @@ $(function() {
         nextArrow: $('.hero__next')
     });
 });
+
+$(function() {
+    $('.clients-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: false,
+        prevArrow: $('.clients__prev'),
+        nextArrow: $('.clients__next')
+    });
+});
+
+$(function() {
+    $('.testis').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: $('.testimonials__prev'),
+        nextArrow: $('.testimonials__next')
+    });
+});

@@ -1,0 +1,51 @@
+.last-news
+    padding-top: 100px
+    padding-bottom: 35px
+    
+.last-news__list
+    display: flex
+    flex-wrap: wrap
+
+.last-news__list-item
+    width: 25%
+
+.last-news__list-link
+    display: block
+    background-color: transparent
+    transition: background-color .2s ease
+    padding: 15px
+
+    time
+        font-size: 12px
+        color: $gray
+
+    h6
+        font-family: $main-bold
+        color: $accent
+        font-size: 14px
+        margin-bottom: 10px
+
+    p
+        color: $main-color
+
+    &:hover
+        background-color: $gainsboro
+
+        .hidden-arrow
+            opacity: 1
+            visibility: visible
+
+.last-news__list-img
+    height: 200px
+    margin-bottom: 20px
+
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+.hidden-arrow
+    width: 20px
+    opacity: 0
+    visibility: hidden
+    transition: opacity .2s ease, visibility .2s ease

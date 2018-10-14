@@ -1,0 +1,64 @@
+.footer
+    background-color: $footer-bg
+    padding: 30px 0
+        
+
+.footer__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.footer__title
+    color: #ffffff
+    font-size: 16px
+    font-family: $main-semibold
+    margin-bottom: 10px
+
+.footer__menu
+    width: calc(50% - 25px)
+    display: flex
+    margin-right: 25px
+
+    a
+        color: #ffffff
+
+.footer-submenu
+    flex-grow: 1
+    a
+        line-height: 1.5
+        &:hover
+            color: $alt-accent
+            text-decoration: underline
+
+    &.footer-submenu--two-col
+        column-count: 2
+
+.footer-submenu__item
+    margin-right: 25px
+
+.footer-info
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 50%
+
+.footer-info__item
+    width: calc(33.3333% - 15px)
+    color: #ffffff
+
+.footer-info__link
+    display: block
+    color: #ffffff
+    &:hover
+        text-decoration: underline
+
+.footer-info__item
+    .button
+        margin-top: 15px
+
+.footer-info__socials
+    .socials__item
+        &:first-child
+            margin-left: 0
+    .socials__link
+        font-size: 16px

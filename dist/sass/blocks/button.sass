@@ -8,6 +8,8 @@
     font-weight: 600
     color: $accent
     padding: 5.5px 31px
+    min-width: 160px
+    text-align: center
     transition: background-color .2s ease
 
 .button:hover
@@ -32,3 +34,18 @@
 
 	&:hover
 		background-color: darken($accent, 5%)
+    
+.button--white
+    background-color: #ffffff
+    color: $accent
+    border-color: #ffffff
+    padding-left: 22px
+    padding-right: 22px
+
+    &:hover
+        background-color: transparent
+        color: #ffffff
+
+    &:active
+        background-color: #ffffff
+        color: $accent
