@@ -20,7 +20,6 @@
         margin-bottom: 30px
 
     li
-        margin-bottom: 8px
         font-size: 18px
         color: #000000
 
@@ -33,6 +32,11 @@
     img
         margin-left: auto
         margin-right: auto
+
+    @media #{$_lg}
+        width: 45%
+        top: 50%
+        transform: translateY(-50%)
 
 .hero__nav
     +container

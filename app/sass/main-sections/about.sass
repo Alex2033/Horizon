@@ -7,6 +7,9 @@
     flex-wrap: wrap
     justify-content: space-between
 
+    @media #{$_lg}
+        margin-bottom: 20px
+
 .about__text
     max-width: 710px
 
@@ -19,6 +22,9 @@
             &::before
                 left: 0
                 transform: translateX(0)
+
+    @media #{$_lg}
+        max-width: 515px
 
 .about__img
     width: 350px

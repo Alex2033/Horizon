@@ -5,7 +5,6 @@
 
 .footer__wrapper
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
 
 .footer__title
@@ -14,13 +13,23 @@
     font-family: $main-semibold
     margin-bottom: 10px
 
+    @media #{$_lg}
+        font-size: 14px
+
 .footer__menu
     width: calc(50% - 25px)
     display: flex
     margin-right: 25px
+    flex-shrink: 0
 
     a
         color: #ffffff
+
+
+    @media #{$_lg}
+        margin-right: 10px
+        a
+            font-size: 12px
 
 .footer-submenu
     flex-grow: 1
@@ -40,11 +49,17 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-    width: 50%
+    flex-grow: 1
 
 .footer-info__item
     width: calc(33.3333% - 15px)
     color: #ffffff
+
+    @media #{$_lg}
+        .button
+            min-width: 135px
+            font-size: 11px
+            padding: 3px 17px
 
 .footer-info__link
     display: block

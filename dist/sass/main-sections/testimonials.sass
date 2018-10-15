@@ -22,7 +22,7 @@
     position: relative
     
 .testis
-    max-width: 1000px
+    max-width: 860px
     margin-left: auto
     margin-right: auto
 
@@ -38,7 +38,7 @@
     right: 0
 
 .testi__wrapper
-    max-width: 980px
+    max-width: 840px
     position: relative
     display: flex
     justify-content: space-between
@@ -51,9 +51,15 @@
     flex-basis: 164px
     flex-shrink: 0
     margin-right: 30px
+    
     > *
         &:not(:last-child)
             margin-bottom: 20px
+
+    @media #{$_lg}
+        width: 145px
+        flex-basis: 145px
+        margin-right: 10px
 
 .testi__customer-info
     h5
@@ -64,6 +70,13 @@
     span
         font-size: 12px
         font-family: $main-light
+
+    @media #{$_lg}
+        h5
+            font-size: 15px
+        
+        span
+            font-size: 10px
 
 .testi__customer-img
     width: 100px
@@ -77,11 +90,20 @@
 .testi__customer-company
     max-width: 160px
 
+    @media #{$_lg}
+        max-width: 135px
+
 .testi__text
     margin-right: 30px
     p
         color: $dark
         margin-bottom: 1em
+
+    @media #{$_lg}
+        margin-right: 15px
+
+        p
+            font-size: 12px
 
 .testi__image
     width: 285px
@@ -91,6 +113,10 @@
     img
         width: 100%
         object-fit: cover
+
+    @media #{$_lg}
+        width: 240px
+        flex-basis: 240px
 
 .testi__quotes
     position: absolute
