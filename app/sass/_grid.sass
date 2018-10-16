@@ -2,6 +2,8 @@ $xxs: "(min-width: 320px)"
 $_xxs: "(max-width: 320px)"
 $xs: "(min-width: 480px)"
 $_xs: "(max-width: 480px)"
+$xsm: "(min-width: 767.99px)"
+$_xsm: "(max-width: 767.99px)"
 $sm: "(min-width: 991.99px)"
 $_sm: "(max-width: 991.99px)"
 $md: "(min-width: 1279.99px)"
@@ -20,6 +22,8 @@ $gutter: 10px
   @media #{$xxs}
     width: 100%
     padding: 0 15px
+  @media #{$xsm}
+    width: 750px
   @media #{$sm}
     width: 970px
   @media #{$md}

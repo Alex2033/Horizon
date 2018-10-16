@@ -2,6 +2,8 @@
     background-color: $footer-bg
     padding: 30px 0
         
+    @media #{$_sm}
+        padding: 40px 0
 
 .footer__wrapper
     display: flex
@@ -31,6 +33,10 @@
         a
             font-size: 12px
 
+    @media #{$_sm}
+        display: none
+        
+
 .footer-submenu
     flex-grow: 1
     a
@@ -51,6 +57,10 @@
     flex-wrap: wrap
     flex-grow: 1
 
+    @media #{$_xsm}
+        flex-direction: column
+        align-items: center
+
 .footer-info__item
     width: calc(33.3333% - 15px)
     color: #ffffff
@@ -60,6 +70,26 @@
             min-width: 135px
             font-size: 11px
             padding: 3px 17px
+
+    @media #{$_xsm}
+        width: 100%
+        max-width: 145px
+        text-align: center
+
+        &:nth-child(1)
+            order: 1
+
+        &:nth-child(3)
+            order: -1
+
+        &:nth-child(4)
+            order: 1
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+        .button
+            display: none
 
 .footer-info__link
     display: block
@@ -77,3 +107,7 @@
             margin-left: 0
     .socials__link
         font-size: 16px
+
+    @media #{$_xsm}
+        .socials__list
+            justify-content: center

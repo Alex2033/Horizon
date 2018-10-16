@@ -22,9 +22,12 @@
     position: relative
     
 .testis
-    max-width: 860px
+    max-width: 1000px
     margin-left: auto
     margin-right: auto
+
+    @media #{$_lg}
+        max-width: 860px
 
 .testimonials__prev,
 .testimonials__next
@@ -38,19 +41,22 @@
     right: 0
 
 .testi__wrapper
-    max-width: 840px
+    max-width: 980px
     position: relative
     display: flex
     justify-content: space-between
     background-color: #ffffff
     padding: 15px 15px 15px 30px
+
+    @media #{$_lg}
+        max-width: 840px
             
 
 .testi__customer
     width: 164px
     flex-basis: 164px
     flex-shrink: 0
-    margin-right: 30px
+    margin-right: 20px
     
     > *
         &:not(:last-child)
@@ -94,7 +100,7 @@
         max-width: 135px
 
 .testi__text
-    margin-right: 30px
+    margin-right: 20px
     p
         color: $dark
         margin-bottom: 1em
