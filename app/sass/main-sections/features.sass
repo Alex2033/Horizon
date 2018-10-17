@@ -2,12 +2,25 @@
     padding: 30px 0
     background-color: $gainsboro
 
+    @media #{$_xsm}
+        background-color: #ffffff
+
 .features-list
     display: flex
     flex-wrap: wrap
     justify-content: center
     margin-right: -95px
     margin-bottom: -20px
+
+    @media #{$_lg}
+        margin-right: -65px
+
+    @media #{$_sm}
+        margin-right: -20px
+
+    @media #{$_xsm}
+        margin-right: 0
+        margin-bottom: -50px
 
 .feature
     width: calc(33.3333% - 95px)
@@ -18,6 +31,15 @@
     @media #{$_lg}
         width: calc(33.3333% - 65px)
         margin-right: 65px
+
+    @media #{$_sm}
+        width: 100%
+        max-width: 305px
+        margin-right: 20px
+        margin-bottom: 50px
+
+    @media #{$_xsm}
+        margin-right: 0
 
 .feature__img
     margin-bottom: 25px
