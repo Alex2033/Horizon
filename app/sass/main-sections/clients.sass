@@ -2,6 +2,10 @@
     padding-top: 100px
     padding-bottom: 70px
 
+    .heading
+        @media #{$_xsm}
+            margin-bottom: 30px
+
 .clients__wrapper
     position: relative
 
@@ -14,8 +18,19 @@
 .clients__prev
     left: -15px
 
+    @media #{$_xsm}
+        top: -20%
+        left: 0
+
+        img
+            width: 25px
+
 .clients__next
     right: -15px
+
+    @media #{$_xsm}
+        top: -20%
+        right: 0
 
 .clients-slider .slick-track
     display: flex
@@ -36,3 +51,6 @@
 
         @media #{$_lg}
             max-width: 170px
+
+        @media #{$_xsm}
+            max-width: 215px

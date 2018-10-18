@@ -9,6 +9,17 @@
 .last-news__list-item
     width: 25%
 
+    @media #{$_sm}
+        width: 33%
+
+    @media #{$_xsm}
+        width: 50%
+        margin-bottom: 20px
+
+    @media (max-width: 576px) 
+        width: 100%
+
+
 .last-news__list-link
     display: block
     background-color: transparent
@@ -46,6 +57,9 @@
 
         p
             font-size: 12px
+
+    @media #{$_xsm}
+        background-color: $gainsboro
 
 .last-news__list-img
     height: 200px
