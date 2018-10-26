@@ -1,12 +1,34 @@
+.header
+    @media #{$_sm}
+        display: flex
+
+        .container
+            width: 100%
+
+    .header__bottom-container
+        +container()
+    
 .header__top
     background-color: $light
     padding: 6px 0
+
+    @media #{$_sm}
+        display: none
 
 .header__logo
     +col(2)
 
     @media #{$_md}
         +col(2.5)
+
+    @media #{$_sm}
+        +col(4)
+
+    @media (max-width: 576px)
+        +col(5)
+
+    @media #{$_xs}
+        +col(5.5)
     
 .logo
     display: block
@@ -38,6 +60,12 @@
 .header__bottom
     padding: 15px 0
 
+    @media #{$_sm}
+        width: 100%
+        padding: 0
+
+
+
 .header__contacts
     +col(6)
     display: flex
@@ -51,6 +79,9 @@
 
     @media #{$_md}
         +col(5.5)
+
+    @media #{$_sm}
+        display: none
 
 .header__link
     display: block
@@ -79,6 +110,9 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+
+    @media #{$_sm}
+        display: none
 
 .header__bottom-row
     align-items: center

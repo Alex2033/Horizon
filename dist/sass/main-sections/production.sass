@@ -5,11 +5,51 @@
     .tabs
         justify-content: center
 
+        > *
+            margin-left: 0
+
+    @media #{$_xsm}
+        .tabs
+            display: block
+
+        .tabs__item
+            display: flex
+            justify-content: center
+
+.production-slider
+    @media #{$xsm}
+        display: flex
+        width: 100%
+        justify-content: center
+
+        > *
+            &:not(:first-child)
+                margin-left: 60px
+    
+.production__prev,
+.production__next
+    position: absolute
+    display: none
+    top: 0
+    z-index: 5
+
+    @media #{$_xsm}
+        display: block
+
+.production__prev
+    left: 0
+
+.production__next
+    right: 0
+
 .prods
     display: flex
     flex-wrap: wrap
     margin-right: -30px
     margin-bottom: 20px
+
+    @media #{$_xsm}
+        justify-content: center
 
 .product
     width: calc(25% - 30px)
@@ -36,6 +76,19 @@
 
         .product__image::before
             background-color: $accent
+
+    @media #{$_sm}
+        width: calc(33.3333% - 30px)
+
+    @media #{$_xsm}
+        width: calc(50% - 30px)
+        max-width: 290px
+
+        &::before
+            display: none
+
+    @media #{$_large-phone}
+        width: 100%
 
 .product__body
     position: relative
@@ -70,6 +123,10 @@
 
         .product__image::before
             background-color: #ffffff
+
+        .hidden-img
+            opacity: 1
+            visibility: visible
 
 .product__price
     transition: color .15s ease

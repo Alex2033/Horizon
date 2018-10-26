@@ -2,6 +2,7 @@
     display: flex
     flex-wrap: wrap
     margin-bottom: 45px
+    position: relative
     > *
         margin-left: 60px
         &:first-child
@@ -20,3 +21,6 @@
     &.active
         color: $alt-accent
         text-decoration: underline
+
+    &:focus
+        outline: 0

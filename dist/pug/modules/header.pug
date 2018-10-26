@@ -32,13 +32,28 @@ header.header
                 // end socials 
 
     .header__bottom
-        .container
+        .container.header__bottom-container
             .row.header__bottom-row
                 .header__logo
                     // begin logo 
                     a(href="#").logo
                         img(src="img/header/logo.png", alt="Logotype")
                     // end logo 
+                .mobile-search
+                    button.mobile-search__btn
+                        i.fas.fa-search
+                    form.mobile-search__form
+                        input(type="text" required="required" placeholder="Поиск...")
+                        button(type="submit").mobile-search__form-btn
+                            i.fas.fa-search
+                .mobile-basket
+                    a(href="#")
+                        i.fas.fa-shopping-cart
+                .mobile-menu
+                    button.mobile-btn
+                        span.mobile-btn__top
+                        span.mobile-btn__middle
+                        span.mobile-btn__bottom
                 .header__contacts
                     .header__location
                         .header__contacts-icon

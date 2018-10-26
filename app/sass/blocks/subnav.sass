@@ -7,13 +7,10 @@
     box-shadow: 0 0 50px rgba(#000, .3)
     transform: translate(-50%)
     padding: 35px 60px 70px 35px
-    opacity: 0
-    visibility: hidden
-    transition: opacity .3s ease, visibility .3s ease
+    display: none
 
     &.active
-        opacity: 1
-        visibility: visible
+        display: block
 
     @media #{$_lg}
         padding: 30px 30px 60px

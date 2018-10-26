@@ -14,12 +14,26 @@
 @import "modules/navigation"  // навигация
 @import "modules/footer"      // подвал страницы
 
+// шаблон стилей для внутренних страниц    
+@import "pages/template"
+
 // blocks
-@import "blocks/button"     // кнопки
-@import "blocks/socials"    // социалки
-@import "blocks/dropdown"   // выпадающее меню
-@import "blocks/tabs"       // табы
-@import "blocks/subnav"     // выпадающая навигация
+@import "blocks/button"            // кнопки
+@import "blocks/socials"           // социалки
+@import "blocks/dropdown"          // выпадающее меню
+@import "blocks/tabs"              // табы
+@import "blocks/subnav"            // выпадающая навигация
+@import "blocks/mobile-search"     // мобильная версия поиска
+@import "blocks/mobile-basket"     // мобильная версия корзины
+@import "blocks/mobile-menu"       // мобильная версия меню
+@import "blocks/breadcrumbs"       // хлебные крошки
+@import "blocks/table"             // таблица
+@import "blocks/link"              // стилизация ссылок на страницах
+@import "blocks/card"              // карточка
+@import "blocks/text"              // стили для текста
+@import "blocks/page-list"         // стилизация списков
+@import "blocks/question"          // секция отправки звонка
+@import "blocks/hiddens"           // стили для отображения или скрытия элементов
 
 // main sections
 @import "main-sections/hero"
@@ -31,4 +45,5 @@
 @import "main-sections/about"
 
 // pages
-@import "pages/index" // главна страница
+@import "pages/index"    // главная страница
+@import "pages/404"      // страница ошибки

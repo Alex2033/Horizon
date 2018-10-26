@@ -49,11 +49,22 @@
           </div>
         </div>
         <div class="header__bottom">
-          <div class="container">
+          <div class="container header__bottom-container">
             <div class="row header__bottom-row">
               <div class="header__logo">
                 <!-- begin logo --><a class="logo" href="#"><img src="img/header/logo.png" alt="Logotype"></a>
                 <!-- end logo -->
+              </div>
+              <div class="mobile-search">
+                <button class="mobile-search__btn"><i class="fas fa-search"></i></button>
+                <form class="mobile-search__form">
+                  <input type="text" required="required" placeholder="Поиск...">
+                  <button class="mobile-search__form-btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="mobile-basket"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+              <div class="mobile-menu">
+                <button class="mobile-btn"><span class="mobile-btn__top"></span><span class="mobile-btn__middle"></span><span class="mobile-btn__bottom"></span></button>
               </div>
               <div class="header__contacts">
                 <div class="header__location">
@@ -836,11 +847,15 @@
         </section>
         <!-- end hero -->
         <!-- begin production -->
-        <section class="production">
+        <section class="production section">
           <div class="container">
             <div class="tabs">
-              <div class="tabs__item production-tab">Печатная продукция</div>
-              <div class="tabs__item production-tab">Сувенирная продукция</div>
+              <div class="slick-nav-prev production__prev"><img src="img/icons/left-arrow.svg" alt="Arrow icon"></div>
+              <div class="production-slider">
+                <div class="tabs__item production-tab">Печатная продукция</div>
+                <div class="tabs__item production-tab">Сувенирная продукция</div>
+              </div>
+              <div class="slick-nav-next production__next"><img src="img/icons/right-arrow.svg" alt="Arrow icon"></div>
             </div>
             <div class="tabs__wrapper">
               <div class="production-content">
@@ -849,82 +864,82 @@
                       <h5 class="headline">Широкоформатная печать </h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/1-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/1-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Наклейки и стикеры</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/2-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/2-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Визитки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/3-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/3-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Блокноты</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/4-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/4-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">POS-материалы</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/5-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/5-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Конверты</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/6-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/6-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Календари 2018</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/7-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/7-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Пакеты</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/8-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/8-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Упаковка</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/9-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/9-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Папки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/10-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/10-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">К мероприятию</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/11-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/11-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Многополосная продукция</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/12-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/12-hover.png" alt="hover production image"></div></a></li>
                   <li class="product" style="display: none;"><a class="product__body" href="#">
                       <h5 class="headline">Листовая продукция</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/13-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/13-hover.png" alt="hover production image"></div></a></li>
                   <li class="product" style="display: none;"><a class="product__body" href="#">
                       <h5 class="headline">Таблички</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/14-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/14-hover.png" alt="hover production image"></div></a></li>
                   <li class="product" style="display: none;"><a class="product__body" href="#">
                       <h5 class="headline">Наградная продукция</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/15-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/15-hover.png" alt="hover production image"></div></a></li>
                   <li class="product" style="display: none;"><a class="product__body" href="#">
                       <h5 class="headline">Прочная продукция</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/16-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/16-hover.png" alt="hover production image"></div></a></li>
                 </ul>
               </div>
               <div class="production-content">
@@ -933,107 +948,107 @@
                       <h5 class="headline">Сувениры к праздникам </h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/1-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/1.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/1-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Флешки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/2-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/2.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/2-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Сувениры к новому году</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/3-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/3.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/3-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Упаковка</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/4-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/4.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/4-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Для офиса</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/5-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/5.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/5-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Ручки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/6-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/6.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/6-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Электрика</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/7-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/7.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/7-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Одежда</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/8-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/8.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/8-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Дом</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/9-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/9.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/9-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Футболки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/10-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/10.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/10-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Отдых</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/11-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/11.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/11-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Элитные подарки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/12-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/12.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/12-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Подарочные наборы</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/13-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/13.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/13-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Ежедневники и блокноты</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/14-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/14.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/14-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Корпоративные</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/15-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/15.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/15-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Часы</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/16-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/16.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/16-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Пледы и подушки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/17.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/17-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/17.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/17-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Сумки</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/18.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/18-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/18.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/18-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Зонты</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/19.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/19-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/19.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/19-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Посуда</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/20.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/20-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/20.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/20-hover.png" alt="hover production image"></div></a></li>
                   <li class="product"><a class="product__body" href="#">
                       <h5 class="headline">Промо</h5>
                       <div class="product__price">от 100 руб</div>
                       <div class="product__next"><img src="img/icons/arrow.svg" alt="Next image"></div>
-                      <div class="product__image"><img src="img/main-sections/production/souvenir/21.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/21-white.png" alt="White production image"></div></a></li>
+                      <div class="product__image"><img src="img/main-sections/production/souvenir/21.png" alt="Production image"><img class="hidden-img" src="img/main-sections/production/souvenir/21-hover.png" alt="hover production image"></div></a></li>
                 </ul>
               </div>
             </div>
@@ -1044,7 +1059,7 @@
         </section>
         <!-- end production -->
         <!-- begin features -->
-        <section class="features">
+        <section class="features section">
           <div class="container">
             <div class="heading">
               <h2>Преимущества</h2>
@@ -1127,7 +1142,7 @@
         </section>
         <!-- end clients -->
         <!-- begin testimonials -->
-        <section class="testimonials">
+        <section class="testimonials section">
           <div class="testimonials__background"><img src="img/main-sections/testimonials/background.png" alt="Testi background"></div>
           <div class="container testimonials__container">
             <div class="heading">
@@ -1192,7 +1207,7 @@
         </section>
         <!-- end testimonials -->
         <!-- begin last-news -->
-        <section class="last-news">
+        <section class="last-news section">
           <div class="container">
             <div class="heading">
               <h2>Последние новости</h2>
