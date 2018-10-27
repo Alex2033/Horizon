@@ -12,11 +12,21 @@ html(lang='ru')
       include ../modules/header
 
       // begin page
-      main.page
+      main.page 
 
         // begin error-page 
         section.error-page.page-section(style="background-image: url(img/main-sections/testimonials/background.png);")
+        
             .container
+                // begin breadcrumbs 
+                .breadcrumbs
+                    ul.breadcrumbs__list.breadrcrumbs__list--hidden
+                        li.breadcrumbs__item
+                            a(href="index.html") 
+                                i.fas.fa-angle-left
+                                |  Назад
+                // end breadcrumbs 
+
                 .error-page__wrapper
                     header.error-page__header
                         h1.error-page__title 404
