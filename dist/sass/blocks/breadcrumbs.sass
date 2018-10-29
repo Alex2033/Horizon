@@ -15,6 +15,16 @@
 
 .breadrcrumbs__list--hidden
     display: flex
+    justify-content: space-between
+
+    .breadcrumbs__item
+        &::before
+            display: none
+
+        &:last-child
+            .svg-inline--fa
+                margin-left: 5px
+
     @media #{$sm}
         display: none
     

@@ -132,3 +132,9 @@ function slick_slider() {
         ]
     });
 };
+
+$(function() {
+    if ( $(window).width() <= 767 ) {
+        $('.news-card .text p').first().prependTo('.news-card .text');
+    }
+});
