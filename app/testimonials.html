@@ -827,12 +827,23 @@
               <li class="testi">
                 <div class="testi__wrapper">
                   <div class="testi__customer">
-                    <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/customer.jpg)"></div>
-                    <div class="testi__customer-info"><img src="img/main-sections/testimonials/company.jpg" alt="Company"></div>
+                    <div class="testi__left">
+                      <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/customer.jpg)"></div>
+                    </div>
+                    <div class="testi__right">
+                      <div class="testi__customer-info"><img src="img/main-sections/testimonials/company.jpg" alt="Company"></div>
+                      <div class="testi__image testi__image--hidden"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
+                    </div>
+                    <div class="testi__image testi__image--visible"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                   </div>
                   <div class="testi__text">
                     <div class="testi__customer-info">
-                      <h5>Иван Иванов</h5><span>Компания "Компания"</span>
+                      <div class="testi__customer-info-left">
+                        <h5>Иван Иванов</h5><span>Компания "Компания"</span>
+                      </div>
+                      <div class="testi__customer-info-right">
+                        <time class="date date--hidden" datetime="2018-07-25">25.07.2018</time>
+                      </div>
                     </div>
                     <p>
                       Наша компания давно сотрудничает с компанией Горизонт. Бывают плановые заказы, иногда возникают абсолютно непредсказуемые и срочные, но работая с Горизонтом, 
@@ -845,14 +856,16 @@
                       в печати. В общем всем смело могу советовать!
                     </p>
                   </div>
-                  <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                 </div>
               </li>
               <li class="testi">
                 <div class="testi__wrapper">
                   <div class="testi__customer">
-                    <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/customer.jpg)"></div>
-                    <div class="testi__customer-info"><img src="img/main-sections/testimonials/logo-dimov.png" alt="Company"></div>
+                    <div class="testi__left">
+                      <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/customer.jpg)"></div>
+                      <div class="testi__customer-info"><img src="img/main-sections/testimonials/logo-dimov.png" alt="Company"></div>
+                    </div>
+                    <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                   </div>
                   <div class="testi__text">
                     <div class="testi__customer-info">
@@ -869,14 +882,16 @@
                       в печати. В общем всем смело могу советовать!
                     </p>
                   </div>
-                  <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                 </div>
               </li>
               <li class="testi">
                 <div class="testi__wrapper">
                   <div class="testi__customer">
-                    <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/woman.png)"></div>
-                    <div class="testi__customer-info"><img src="img/main-sections/testimonials/teremok_logo_new.png" alt="Company"></div>
+                    <div class="testi__left">
+                      <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/man.png)"></div>
+                      <div class="testi__customer-info"><img src="img/main-sections/testimonials/teremok_logo_new.png" alt="Company"></div>
+                    </div>
+                    <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                   </div>
                   <div class="testi__text">
                     <div class="testi__customer-info">
@@ -893,14 +908,16 @@
                       в печати. В общем всем смело могу советовать!
                     </p>
                   </div>
-                  <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                 </div>
               </li>
               <li class="testi">
                 <div class="testi__wrapper">
                   <div class="testi__customer">
-                    <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/man.png)"></div>
-                    <div class="testi__customer-info"><img src="img/main-sections/testimonials/logostolplit.png" alt="Company"></div>
+                    <div class="testi__left">
+                      <div class="testi__customer-img" style="background-image: url(img/main-sections/testimonials/woman.png)"></div>
+                      <div class="testi__customer-info"><img src="img/main-sections/testimonials/logostolplit.png" alt="Company"></div>
+                    </div>
+                    <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                   </div>
                   <div class="testi__text">
                     <div class="testi__customer-info">
@@ -915,12 +932,27 @@
                     <p>
                       Специалисты высокого класса!  Хорошее качество, делают не «и так сойдет», а переживают за любой заказ – всегда рекомендуют проверенные материалы и форматы, отзывчивые, предупреждают, если будет задержка 
                       в печати. В общем всем смело могу советовать!
+                      
                     </p>
                   </div>
-                  <div class="testi__image"><img src="img/main-sections/testimonials/people.jpg" alt="People"></div>
                 </div>
               </li>
             </ul>
+            <!-- begin pagination -->
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                <li class="pagination__item"><a class="active" href="#">01</a></li>
+                <li class="pagination__item"><a href="#">02</a></li>
+                <li class="pagination__item"><a href="#">03</a></li>
+                <li class="pagination__item"><a href="#">04</a></li>
+                <li class="pagination__item"><a href="#">05</a></li>
+                <li class="pagination__item"><span>...</span></li>
+                <li class="pagination__item"><a href="#">10</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-angle-right"></i></a></li>
+              </ul>
+            </div>
+            <!-- end pagination -->
           </div>
         </section>
         <!-- end page-section -->
